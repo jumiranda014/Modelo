@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Template HTML</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <h1>modelo de pagina semantica</h1>
+        <p>Cabeçalho do site , possui a função de introduzir areas de Cabeçalho e navegação.
+            pode conter:
+        </p>
+        <ul>
+            <li>h1-Para Titulos geral</li>
+            <li>Logo-tags img e picture</li>
+            <li>Menu-nav,Ul</li>
+        </ul>
+    </header>
+    <nav>
+        <p>Area de navegação , pode conter links e menus para interacao do usuário</p>
+    </nav>
+    <main>
+        <p>conteúdo principal da página- nao pode conter mais de um por documento</p>
+        <article>
+            <p>conteúdo independente,autocontido ou seja começo, meio e fim</p>
+            <section>
+                <p>Seção generica de conteúdo</p>
+            </section>
+            <picture>
+                <p>picture é uma tag que permite especificar múltiplas fontes de imagem para diferentes dispositivos ou
+                    contextos</p>
+                <source media="( min-width: 1600px)" srcset="https://placehold.co/800x600/red/white?text=Grande">
+                <source media="( max-width: 600px)" srcset="https://placehold.co/200x100/blue/white?text=pequeno">
+                <img src="https://placehold.co/600x400/orange/white?text=Padrao"
+                    alt="imagem de exemplo cinza com dimensoes">
+            </picture>
+        </article>
+        <aside>
+            <p> seção de uma pagina que consiste de conteudo que é tangencialmente relacionado ao conteúdo do seu entorno </p>
+        </aside>
+    </main>
+    <footer>
+        <p>representação do rodapé da página ou da seção, pode vir acompanhado de um address como filho</p>
+        <address>
+            <p>
+                seção que permite a inclusão de informações sobre a origem do conteudo,seja autoria de pessoas ou instituições, permite inclusão de endereços sejam físicos ou digitais
+        </address>
+    </footer>
+</body>
+
+</html>
