@@ -46,3 +46,33 @@ section,picture{
      width: 100%;
      
 }
+
+/*Desenvolva uma media query para os três tamanhos de imagem*/
+/*Pequeno <=600px --Rosa*/
+/*Padrão >600px <1600px --Cinza*/
+/*Grande >=1600px --Laranja*/
+/*Cores de background diferentes, Tamanho de fonte diferente, paddings diferentes*/
+
+@media (max-width: 600px){
+    body {
+        background-color: pink;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1600px){
+    body {
+        background-color: gray;
+        padding: 15px 20p;
+        font-size: 18px;
+    }
+}
+
+@media (min){
+    body {
+        background-color: orange;
+        padding: 20px 30px;
+        font-size: 22px;
+    }
+}
