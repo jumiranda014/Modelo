@@ -1,20 +1,26 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     width: 100%;
+    min-height: 100vh;
     background-color: #1e1e1e;
     padding: 20px 80px;
-    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #1e2d55;
 }
 
-header, nav, main, footer {
+/* Cabeçalho */
+header,
+main,
+footer {
     width: 100%;
     background-color: #ffffff;
-    margin: 12px;
-    padding: 20px;
+    margin: 20px 0;
+    padding: 25px;
     border-radius: 30px;
 }
 
@@ -22,64 +28,130 @@ header {
     border-left: 8px solid #14298a;
 }
 
-h1 {
+header h1 {
     color: #14298a;
+    margin-bottom: 10px;
 }
 
+header p {
+    margin-bottom: 10px;
+}
+
+header ul {
+    padding-left: 25px;
+    line-height: 1.8;
+}
+
+/* Conteúdo principal */
 main {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+main > section {
+    width: 100%;
 }
 
 main p {
-    min-width: 100%;
-    color: rgb(30, 45, 85);
-}
-
-aside {
-    width: 35%;
+    line-height: 1.6;
 }
 
 article {
-    width: 60%;
+    width: calc(65% - 10px);
+    background-color: #83ace2;
+    border-radius: 30px;
+    padding: 25px;
 }
 
-aside, article {
-    background-color: #83ace26c;
-    border-radius: 30px;
-    padding: 20px;
+article h2,
+article h3 {
+    color: #14298a;
+    margin-bottom: 15px;
 }
 
-section {
-    background-color: #93b5e281;
-    width: 90%;
+article section {
+    width: 100%;
+    background-color: #93b5e2;
     padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+/* Barra lateral */
+aside {
+    width: calc(35% - 10px);
+    background-color: #83ace2;
     border-radius: 30px;
+    padding: 25px;
+}
+
+aside h2 {
+    color: #14298a;
+    margin-bottom: 15px;
 }
 
 mark {
     background-color: #182c64;
     color: #ffffff;
-    padding: 3px;
+    padding: 3px 6px;
     border-radius: 5px;
 }
 
+/* Imagem */
 figure {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 figure img {
+    max-width: 100%;
+    height: auto;
     border-radius: 20px;
 }
 
 figcaption {
     margin-top: 10px;
     font-weight: bold;
+    color: #14298a;
+}
+
+/* Rodapé */
+footer {
+    border-top: 8px solid #14298a;
+}
+
+footer h2 {
+    color: #14298a;
+    margin-bottom: 15px;
 }
 
 address {
     background-color: #e5e5e5;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+footer p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header,
+    main,
+    footer {
+        padding: 20px;
+    }
+
+    article,
+    aside {
+        width: 100%;
+    }
 }
